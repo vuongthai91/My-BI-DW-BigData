@@ -1,0 +1,14 @@
+Steps
+
+1. Load sakila dw script using MySQL Workbench
+2. Load sakila data script using MySQL Workbench
+3. Open Tableau
+4. Connect to MySQL using the connection parameters
+6. Select Skill data base
+7. Select New Custom SQL: Which actor has appeared in the most films?
+
+select dim_actor.actor_first_name as first_name, dim_actor.actor_last_name as last_name,
+       count(dim_actor.actor_key) as film_count
+from dim_actor join dim_film_actor_bridge using (actor_key)
+group by actor_key
+order by film_count desc 

@@ -1,0 +1,85 @@
+STEPS
+
+How to obtain version 1?
+
+0. Open a new table file
+1. Load auto_mpg.csv file (in case csv is not loaded in separated columns, modified text file properties)
+2. Generate "Region" from "Origin" creating a calculated field:
+
+IF [Origin]=1
+THEN 'US'
+ELSEIF  [Origin]=2
+THEN 'Europe'
+ELSE 'Japan'
+END
+
+3. Create Year from "Model Year" creating a calculated field:
+
+YEAR(DATE(DATEPARSE ( "yyyy", STR([Model Year] + 1900) )))
+
+4. Create "Brand" applying split to "Car Name"
+5. Create "Card Brand" creating a calculated field:
+
+if ([Brand]='toyouta') THEN
+'toyota'
+ELSEIF ([Brand]='mercedes') THEN
+'mercedes benz'
+ELSEIF ([Brand]='mercedes-benz') THEN
+'mercedes benz'
+ELSEIF ([Brand]='maxda') THEN
+'mazda'
+ELSEIF ([Brand]='chevy') THEN
+'chevrolet'
+ELSEIF ([Brand]='chevroelt') THEN
+'chevrolet'
+ELSEIF ([Brand]='vw') THEN
+'volkswagen'
+ELSEIF ([Brand]='vokswagen') THEN
+'volkswagen'
+ELSEIF ([Brand]='capri') THEN
+'mercury'
+ELSE [Brand]
+END
+
+5. Create Car Model using:
+
+RIGHT([Car Name],LEN([Car Name])- FINDNTH([Car Name]," ",1))
+
+6. Hide unused columns: Model Year, Origin, Car Name
+
+7. Save your work as s12 v1.twb
+
+How to obtain version 2?
+
+0. Open S12 v1.twb
+1. Create "Cars per Brand"
+	- Add. "Card brand" to columns 
+	- Add "Number of Records" to rows
+	- Show Me > Bar Chart
+	- Add Country of Origin as Filter
+	- Hide Chart Title
+2. Create "Cars per Year"
+	- Add "Year (Count)" to columns
+	- Add "Car Brand" to rows
+	- Show Me > Bar Chart
+	- Add "Year" to Marks > Color
+	- Add "Year" as Filter
+	- Hide Chart Title
+3. Create "Avg. Acceleration & Horsepower"
+	- Add Acceleration to rows
+	- Change SUM(Acceleration) to AVG(Acceleration) 
+	- Add "Year" to columns
+	- Show Me > Line Chart
+	- Add Horsepower to rows
+	- Change SUM(Horsepower) to AVG(Horsepower)
+	- Add "Car Brand" as Filter
+	- Hide Chart Title
+4. Create Car Brand Analysis
+	- Add "Cars per Brand"
+	- Add "Cars per Year"
+	- Add "Avg. Acceleration & Horsepower"
+	- Adjust Dashboard Size to Automatic
+	- Adjust charts to fit (right one for each one)
+	- Add filter and adjust where they can be applied
+
+After this steps you have created s12 v2.twb

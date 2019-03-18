@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20183.18.1018.1932                               -->
+<workbook original-version='10.5' source-build='2018.3.0 (20183.18.1018.1932)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='auto_mpg' inline='true' name='federated.1k8hdhv1qzyia918r1z0k0htrupe' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='auto_mpg' name='textscan.0xre74o1vv2l0x160irs112v90ug'>
+            <connection class='textscan' directory='/Users/josepcurto/Documents/Work/3. Customer - Education/IE/2018/MRCB/Sessions/S7' filename='auto_mpg.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0xre74o1vv2l0x160irs112v90ug' name='auto_mpg.csv' table='[auto_mpg#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='real' name='mpg' ordinal='0' />
+            <column datatype='integer' name='cylinders' ordinal='1' />
+            <column datatype='real' name='displacement' ordinal='2' />
+            <column datatype='integer' name='horsepower' ordinal='3' />
+            <column datatype='real' name='weight' ordinal='4' />
+            <column datatype='real' name='acceleration' ordinal='5' />
+            <column datatype='integer' name='model_year' ordinal='6' />
+            <column datatype='integer' name='origin' ordinal='7' />
+            <column datatype='string' name='car_name' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mpg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mpg]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>mpg</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cylinders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cylinders]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>cylinders</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>displacement</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[displacement]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>displacement</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>horsepower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[horsepower]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>horsepower</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>acceleration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[acceleration]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>acceleration</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>model_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[model_year]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>model_year</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>car_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[car_name]</local-name>
+            <parent-name>[auto_mpg.csv]</parent-name>
+            <remote-alias>car_name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Year' datatype='integer' datatype-customized='true' name='[Calculation_3815745188173832192]' role='dimension' type='quantitative'>
+        <calculation class='tableau' formula='YEAR(DATE(DATEPARSE ( &quot;yyyy&quot;, STR([model_year] + 1900) )))' />
+      </column>
+      <column caption='Region' datatype='string' name='[Calculation_3815745188174643201]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [origin]=1&#10;THEN &apos;US&apos;&#10;ELSEIF  [origin]=2&#10;THEN &apos;Europe&apos;&#10;ELSE &apos;Japan&apos;&#10;END' />
+      </column>
+      <column caption='Car Model' datatype='string' name='[Calculation_4532873093196525568]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='RIGHT([car_name],LEN([car_name])- FINDNTH([car_name],&quot; &quot;,1))' />
+      </column>
+      <column caption='Car Brand' datatype='string' name='[Calculation_570409082294542336]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if ([car_name - Split 1]=&apos;toyouta&apos;) THEN&#10;&apos;toyota&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;mercedes&apos;) THEN&#10;&apos;mercedes benz&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;mercedes-benz&apos;) THEN&#10;&apos;mercedes benz&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;maxda&apos;) THEN&#10;&apos;mazda&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;chevy&apos;) THEN&#10;&apos;chevrolet&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;chevroelt&apos;) THEN&#10;&apos;chevrolet&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;vw&apos;) THEN&#10;&apos;volkswagen&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;vokswagen&apos;) THEN&#10;&apos;volkswagen&apos;&#10;ELSEIF ([car_name - Split 1]=&apos;capri&apos;) THEN&#10;&apos;mercury&apos;&#10;ELSE [car_name - Split 1]&#10;END' />
+      </column>
+      <column aggregation='None' datatype='integer' hidden='true' name='[Cylinders (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[cylinders]' peg='0' size='4' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Acceleration' datatype='real' name='[acceleration]' role='measure' type='quantitative' />
+      <column caption='Brand' datatype='string' hidden='true' name='[car_name - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.1k8hdhv1qzyia918r1z0k0htrupe].[car_name]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [car_name], &quot; &quot;, 1 ) )' />
+      </column>
+      <column caption='Car Name' datatype='string' hidden='true' name='[car_name]' role='dimension' type='nominal' />
+      <column caption='Cylinders' datatype='integer' name='[cylinders]' role='measure' type='quantitative' />
+      <column caption='Displacement' datatype='real' name='[displacement]' role='measure' type='quantitative' />
+      <column caption='Horsepower' datatype='integer' name='[horsepower]' role='measure' type='quantitative' />
+      <column caption='Model Year' datatype='integer' hidden='true' name='[model_year]' role='dimension' type='quantitative' />
+      <column caption='Mpg' datatype='real' name='[mpg]' role='measure' type='quantitative' />
+      <column caption='Origin' datatype='integer' hidden='true' name='[origin]' role='measure' type='quantitative' />
+      <column caption='Weight' datatype='real' name='[weight]' role='measure' type='quantitative' />
+      <column-instance column='[acceleration]' derivation='Avg' name='[avg:acceleration:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[mpg]' derivation='Avg' name='[avg:mpg:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_3815745188174643201]' derivation='None' name='[none:Calculation_3815745188174643201:nk]' pivot='key' type='nominal' />
+      <column-instance column='[car_name - Split 1]' derivation='None' name='[none:car_name - Split 1:nk]' pivot='key' type='nominal' />
+      <column-instance column='[model_year]' derivation='None' name='[none:model_year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[acceleration]' derivation='Sum' name='[sum:acceleration:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Car Brand)' hidden='true' name='[Action (Car Brand)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[car_name - Split 1]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Car Brand,Model Year)' hidden='true' name='[Action (Car Brand,Model Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[car_name - Split 1]' />
+          <groupfilter function='level-members' level='[none:model_year:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Country of Origin,Model Year)' hidden='true' name='[Action (Country of Origin,Model Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_3815745188174643201]' />
+          <groupfilter function='level-members' level='[none:model_year:ok]' />
+        </groupfilter>
+      </group>
+      <group hidden='true' name='[Exclusions (Car Brand,Model Year)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:car_name - Split 1:nk]' />
+          <groupfilter function='level-members' level='[none:model_year:ok]' />
+        </groupfilter>
+      </group>
+      <layout dim-ordering='alphabetic' dim-percentage='0.388535' measure-ordering='alphabetic' measure-percentage='0.611465' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:car_name - Split 1:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;chevy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;saab&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;amc&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;mercury&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;cadillac&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;peugeot&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;fiat&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;triumph&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;chrysler&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;subaru&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;capri&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;plymouth&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;mercedes&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;audi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;nissan&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;maxda&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;vw&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;chevroelt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;pontiac&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;ford&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;vokswagen&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;hi&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;volkswagen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;mazda&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;mercedes-benz&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;datsun&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;toyota&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;chevrolet&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;renault&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;bmw&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;oldsmobile&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;honda&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;volvo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;dodge&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;toyouta&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;buick&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;opel&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1k8hdhv1qzyia918r1z0k0htrupe].[avg:acceleration:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1k8hdhv1qzyia918r1z0k0htrupe].[sum:acceleration:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1k8hdhv1qzyia918r1z0k0htrupe].[avg:mpg:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_3815745188174643201:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Europe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;US&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:model_year:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>78</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>70</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>74</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>82</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>79</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>75</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>71</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>76</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>80</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>77</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>72</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>81</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>73</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Reino Unido&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='mpg' />
+        <field-sort-custom-order field='cylinders' />
+        <field-sort-custom-order field='displacement' />
+        <field-sort-custom-order field='horsepower' />
+        <field-sort-custom-order field='weight' />
+        <field-sort-custom-order field='acceleration' />
+        <field-sort-custom-order field='Calculation_3815745188173832192' />
+        <field-sort-custom-order field='Calculation_3815745188174643201' />
+        <field-sort-custom-order field='car_name' />
+        <field-sort-custom-order field='Calculation_4532873093196525568' />
+        <field-sort-custom-order field='Calculation_570409082294542336' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1k8hdhv1qzyia918r1z0k0htrupe].[none:Calculation_3815745188174643201:nk]</field>
+            <field>[federated.1k8hdhv1qzyia918r1z0k0htrupe].[none:car_name - Split 1:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{EB800840-631E-458F-95FB-2E3E9BC19026}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFXUlEQVR4nO3VMQEAIAzAMMC/5yFjRxMF/XpnZg4AOW87AIAdBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABR
+      BgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUA
+      AFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQ
+      ZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEG
+      ABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAA
+      UQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBl
+      AABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEGABBlAABRBgAQZQAAUQYA
+      EGUAAFEGABBlAABRBgAQZQAAUQYAEGUAAFEfFxoG/IiMv0YAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
